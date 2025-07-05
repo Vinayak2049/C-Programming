@@ -15,12 +15,12 @@ int main(){
     char *ptr = str;
     while((ptr=strstr(ptr,"cat"))!= NULL){
         cat++;
-        ptr+=strlen("cat");
+        ptr=ptr+1
     }
     ptr = str;
     while((ptr=strstr(ptr,"hat"))!= NULL){
         hat++;
-        ptr+=strlen("hat");
+        ptr=ptr+1
     }
     if(cat==hat)
     printf("True");
